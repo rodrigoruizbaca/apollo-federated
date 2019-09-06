@@ -1,0 +1,28 @@
+{
+    "encryptedKeys": true,
+    "api": {
+        "http": {
+            "host": "localhost",
+            "port": 3002
+        },
+        "version": "v1",
+        "prefix": "federated-forum"
+    },
+    "logging": {
+        "logstash": {
+            "host": "logger.aws.cbtnuggets.com",
+            "port": 12201
+        },
+        "data_dog": {
+            "host": "localhost",
+            "port": 10518
+        }
+    },
+    "statsd": {
+        "host": [
+            "metrics.aws.cbtnuggets.com",
+            "datadog"
+        ],
+        "port": 8125
+    }
+}

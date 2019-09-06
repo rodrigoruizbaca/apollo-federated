@@ -1,0 +1,68 @@
+{
+    "service": {
+        "cbtn-lx-prod": {
+            "client_id": [
+                {
+                    "type": "plaintext",
+                    "value": "8166ce78bc069473c7e64d87b5566c98ab881bb7"
+                }
+            ],
+            "client_secret": [
+                {
+                    "region": "us-east-1",
+                    "type": "kms",
+                    "value": "AQICAHgEAP/fimrFiUGvIixKUbkkJmz8tS6oAjWxrAqwhqf2zQFEZyTz14oj2QrMYRfWlnfuAAAAhzCBhAYJKoZIhvcNAQcGoHcwdQIBADBwBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDPEnvkFNzVCuWlVlywIBEIBDTx24ZCgsJZE8F4N+bMdtokbRWteXQoAhpx3Wb2V1isu2CPDHdnp4UYF96gskYPOmT6ZFEZodm+doiGait8WyI/qZQg=="
+                },
+                {
+                    "region": "eu-west-2",
+                    "type": "kms",
+                    "value": "AQICAHiDrMMyGXjoKhRoDiXlp26T//OpVdAZzP/o1Yy0vAHCkQHVuSKK5CgdlmiSnrxvLoT2AAAAhzCBhAYJKoZIhvcNAQcGoHcwdQIBADBwBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDPQTmzSVs54rey6IHAIBEIBDhuthCOD4PVZJcQrFvUh28ewSpKDC3jdiW44Ae1yFxDKMvlqbydc1VEZW17gvbUplrfYVQt1rkugOyhFL3kGaoqVjMg=="
+                }
+            ],
+            "grant_type": [
+                {
+                    "type": "plaintext",
+                    "value": "client_credentials"
+                }
+            ],
+            "host": [
+                {
+                    "type": "plaintext",
+                    "value": "http://1.auth.service.prod.us-east-1.nuggets.local"
+                }
+            ]
+        },
+        "cbtn-lx-qa": {
+            "client_id": [
+                {
+                    "type": "plaintext",
+                    "value": "59b4d95510299ae428025db7be442628ce9ac5d6"
+                }
+            ],
+            "client_secret": [
+                {
+                    "region": "us-east-1",
+                    "type": "kms",
+                    "value": "AQICAHjflGwOFw9W3BeMwllJIKtXNx4lGSpQrENBa38j8mF9xQHlkvNwMEfwqbXmxT7k148OAAAAhzCBhAYJKoZIhvcNAQcGoHcwdQIBADBwBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDO6KddZR7Tm0B7FttwIBEIBDdOdqj6qfFX3mbOT32GX/n4VY9/hgvShGOTrdW3qpmK3pN1AfjMKsYXujjQJnB4PBV96/Pw1q13h+wGzuSmWeOZZJ7Q=="
+                },
+                {
+                    "region": "eu-west-2",
+                    "type": "kms",
+                    "value": "AQICAHhexbqqAVm3SavDF+OdHJNTGjAm230P09duMrJdLfGkRwGTaGJt2l+W6JPOBh6gOgX1AAAAhzCBhAYJKoZIhvcNAQcGoHcwdQIBADBwBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDA5SH+dR+CSJkqaKfQIBEIBDnzmxjfQRnRAX9y9Moc3kQjrQhlBkxFfbOZs30nl0uKFZGJdWXUMmUU1Ywtxhc0SOAPoRvrVlwTxWp62S1UqNKS4FVA=="
+                }
+            ],
+            "grant_type": [
+                {
+                    "type": "plaintext",
+                    "value": "client_credentials"
+                }
+            ],
+            "host": [
+                {
+                    "type": "plaintext",
+                    "value": "http://1.auth.service.qa.us-east-1.nuggets.local"
+                }
+            ]
+        }
+    }
+}

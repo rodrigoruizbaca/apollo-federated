@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+*.log
+node_modules
+.test_output
+.vscode
+dump.rdb

@@ -1,0 +1,31 @@
+{
+    "name": "service-federated-graphql-gateway",
+    "version": "1.0.0",
+    "description": "service-federated-graphql-gateway created by Rodrigo Ruiz Baca",
+    "main": "",
+    "scripts": {},
+    "author": "Rodrigo Ruiz Baca",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cbtnuggets/service-federated-graphql-gateway"
+    },
+    "bugs": {
+        "url": "https://github.com/cbtnuggets/service-federated-graphql-gateway/issues"
+    },
+    "homepage": "https://github.com/cbtnuggets/service-federated-graphql-gateway#readme",
+    "contributors": [
+        {
+            "name": "Rodrigo Ruiz Baca",
+            "slack": "rbaca",
+            "slackId": "U8T2EU210",
+            "email": "rbaca@cbtnuggets.com"
+        }
+    ],
+    "dependencies": {
+        "@apollo/gateway": "^0.8.2",
+        "apollo-server": "^2.8.1",
+        "apollo-server-cache-memcached": "^0.6.3",
+        "graphql": "^14.4.2"
+    }
+}

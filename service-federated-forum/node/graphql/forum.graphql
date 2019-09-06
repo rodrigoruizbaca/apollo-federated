@@ -1,0 +1,26 @@
+type Post {
+    post_id: String
+    resource_id: String
+    comment: String
+    created_by: Member
+    dummy: [Dummy]
+}
+
+extend type Member @key(fields: "member_nrn") {
+    member_nrn: ID! @external    
+}
+
+extend type Dummy @key(fields: "id") {
+    id: ID! @external    
+}
+
+type Resource {
+    resource_id: String
+    name: String
+}
+
+type Query {
+    post(resource_id: String!, post_id: ID!): Post
+    posts(resource_id: String!): [Post]
+    getResources: [Resource]
+}

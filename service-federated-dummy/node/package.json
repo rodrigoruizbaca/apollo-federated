@@ -1,0 +1,23 @@
+{
+  "name": "service-federated-dummy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@cbtnuggets/lib-auth-service-client-nodejs": "^6.4.1",
+    "@cbtnuggets/lib-express-app-core-nodejs": "^7.6.0",
+    "apollo-server-express": "^2.7.0",
+    "@apollo/federation": "^0.8.0",
+    "aws-sdk": "^2.512.0",
+    "dataloader": "^1.4.0",
+    "graphql": "^14.2.1",
+    "graphql-depth-limit": "^1.1.0",
+    "graphql-rate-limit-directive": "^1.1.0",
+    "graphql-tools": "^4.0.4",
+    "lodash": "^4.17.11",
+    "merge-graphql-schemas": "^1.5.8",
+    "nodemon": "^1.18.4",
+    "passport": "^0.4.0",
+    "passport-http-bearer": "^1.0.1"
+    }
+}

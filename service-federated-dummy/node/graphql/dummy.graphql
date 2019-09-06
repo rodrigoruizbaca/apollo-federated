@@ -1,0 +1,9 @@
+type Dummy @key(fields: "id") {
+    id: ID!
+    description: String!
+}
+
+
+type Query {
+    getDummys: [Dummy]
+}

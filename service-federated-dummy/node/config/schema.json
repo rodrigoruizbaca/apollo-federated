@@ -1,0 +1,99 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "User Profile Service Configuration",
+    "version": "1.0",
+    "validation": "https://www.npmjs.com/package/json-schema",
+    "type": "object",
+    "properties": {
+        "required": [
+            "api",
+            "statsd",
+            "logging",
+            "service",
+            "aws"
+        ],
+        "encryptedKeys": {
+            "type": "boolean"
+        },
+        "api": {
+            "type": "object",
+            "properties": {
+                "version": {
+                    "type": "string"
+                },
+                "prefix": {
+                    "type": "string"
+                },
+                "http": {
+                    "type": "object",
+                    "properties": {
+                        "host": {"$ref": "#/definitions/nonEmptyString"},
+                        "port": {
+                            "type": "number"
+                        }
+                    },
+                    "required": ["host", "port"]
+                }
+            },
+            "required": ["version", "prefix"],
+            "oneOf": [
+                {
+                    "required": ["http"]
+                }
+            ]
+        },
+        "statsd": {
+            "type": "object",
+            "properties": {
+                "host": {"type": "array"},
+                "port": {"type": "number"}
+
+            },
+            "required": ["host", "port"]
+        },
+        "logging": {
+            "type": "object",
+            "properties": {
+                "logstash": {
+                    "type": "object",
+                    "properties": {
+                        "host": {"$ref": "#/definitions/nonEmptyString"},
+                        "port": {"type": "number"}
+                    },
+                    "required": ["host", "port"]
+                }
+            }
+        },
+        
+        "service": {
+            "type": "object",
+            "properties": {
+                "host": {
+                    "type": "string",
+                    "required": ["host"]
+                }
+            },
+            "required": ["host"]
+        }
+        
+    },
+    "definitions": {
+        "nonEmptyString": {
+            "type": "string",
+            "minLength": 1
+        },
+        "authClientId": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40,}$"
+        },
+        "hostWithPort": {
+            "type": "object",
+            "properties": {
+                "host": {"$ref": "#/definitions/nonEmptyString"},
+                "port": {"type": "number"}
+            },
+            "required": ["host", "port"]
+        }
+    },
+    "additionalProperties": true
+}

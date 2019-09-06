@@ -1,0 +1,3 @@
+buildEngine: "node-8.10.0"
+formationTemplate: service.yaml
+type: service

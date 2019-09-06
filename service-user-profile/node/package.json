@@ -1,0 +1,42 @@
+{
+    "name": "service-user-profile",
+    "version": "1.0.0",
+    "description": "service-user-profile created by Rodrigo Ruiz Baca",
+    "main": "",
+    "scripts": {},
+    "author": "Rodrigo Ruiz Baca",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cbtnuggets/service-user-profile"
+    },
+    "bugs": {
+        "url": "https://github.com/cbtnuggets/service-user-profile/issues"
+    },
+    "homepage": "https://github.com/cbtnuggets/service-user-profile#readme",
+    "contributors": [
+        {
+            "name": "Rodrigo Ruiz Baca",
+            "slack": "rbaca",
+            "slackId": "U8T2EU210",
+            "email": "rbaca@cbtnuggets.com"
+        }
+    ],
+    "dependencies": {
+        "@cbtnuggets/lib-auth-service-client-nodejs": "^6.4.1",
+        "@cbtnuggets/lib-express-app-core-nodejs": "^7.6.0",
+        "apollo-server-express": "^2.7.0",
+        "@apollo/federation": "^0.8.0",
+        "aws-sdk": "^2.512.0",
+        "dataloader": "^1.4.0",
+        "graphql": "^14.2.1",
+        "graphql-depth-limit": "^1.1.0",
+        "graphql-rate-limit-directive": "^1.1.0",
+        "graphql-tools": "^4.0.4",
+        "lodash": "^4.17.11",
+        "merge-graphql-schemas": "^1.5.8",
+        "nodemon": "^1.18.4",
+        "passport": "^0.4.0",
+        "passport-http-bearer": "^1.0.1"
+    }
+}

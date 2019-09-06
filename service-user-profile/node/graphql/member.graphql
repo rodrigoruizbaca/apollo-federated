@@ -1,0 +1,26 @@
+type Member @key(fields: "member_nrn") {
+    member_id: String @deprecated(reason: "Use member_nrn instead!")
+    member_nrn: ID!
+    profile: Profile
+}
+
+type Profile {
+    member_id: String
+    display_name: String
+    avatar: Avatar
+}
+
+type Avatar {
+    key: String
+    provider: String
+    small: String
+    medium: String
+    large: String
+}
+
+extend type Query {
+    
+    getUserByNrn(nrn: ID!): Member
+    getUsers: [Member]
+    
+}

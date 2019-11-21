@@ -1,9 +1,16 @@
 type Dummy @key(fields: "id") {
     id: ID!
     description: String!
+    #xyz: String
+    #cccc:String
+    #ddd: String
 }
 
 
 type Query {
     getDummys: [Dummy]
+    getDummys1: [Dummy]
+    #getDummys2: [Dummy]
+    #getDummys3: [Dummy]
+    #getDummys4: [Dummy]
 }

@@ -15,7 +15,11 @@ const dummys = [{
 const createResolverMap = () => {
     return {
         Query: {
-            getDummys: (root, args, context, info) => dummys
+            getDummys: (root, args, context, info) => dummys,
+            getDummys1: (root, args, context, info) => dummys,
+            getDummys2: (root, args, context, info) => dummys,
+            getDummys3: (root, args, context, info) => dummys,
+            getDummys4: (root, args, context, info) => dummys
         },
         Dummy: {
             __resolveReference(object) {                

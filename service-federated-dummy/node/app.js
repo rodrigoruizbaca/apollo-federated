@@ -17,6 +17,9 @@ ExpressAppCore
         const server = new ApolloServer({
             schema: createSchema(),
             uploads: false,
+            context: ({ req }) => {
+                return { access_token: req.headers.access_token };
+            },            
             onHealthCheck: () => {
                 return new Promise((resolve, reject) => {
                   // Replace the `true` in this conditional with more specific checks!
@@ -26,7 +29,7 @@ ExpressAppCore
                     reject();
                   }
                 });
-              },
+            }
         });                
 
         app.use(logger.statsd.collect({
@@ -34,7 +37,7 @@ ExpressAppCore
             timing: true
         }));
         
-        logger.use('graphql.querylog', { apolloServer: server });
+        //logger.use('graphql.querylog', { apolloServer: server });
 
         server.applyMiddleware({ 
             app, 

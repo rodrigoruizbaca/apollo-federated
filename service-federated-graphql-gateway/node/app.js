@@ -1,25 +1,16 @@
 const {
     ApolloServer
-} = require('apollo-server');
+} = require('apollo-server-express');
 const {
     ApolloGateway, RemoteGraphQLDataSource
 } = require("@apollo/gateway");
-const { MemcachedCache } = require('apollo-server-cache-memcached');
 
 let numRequests = 0;
 
 const gateway = new ApolloGateway({
     serviceList: [{
-            name: 'forum',
-            url: 'http://localhost:3002/federated-forum/v1/graphql'
-        },
-        {
-            name: 'user',
-            url: 'http://localhost:3001/user-profile/v1/graphql'
-        },
-        {
-            name: 'dummy',
-            url: 'http://localhost:3003/federated-dummy/v1/graphql'
+            name: 'license',
+            url: 'http://localhost:3000/federated-dummy/v1/graphql'
         }
         // more services
     ],

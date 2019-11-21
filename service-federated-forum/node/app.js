@@ -16,7 +16,7 @@ ExpressAppCore
         const { config: config, app, logger } = ExpressAppCore.getInstance();
         const server = new ApolloServer({
             schema: createSchema(),
-            uploads: false,
+            uploads: false,            
             onHealthCheck: () => {
                 return new Promise((resolve, reject) => {
                   // Replace the `true` in this conditional with more specific checks!
